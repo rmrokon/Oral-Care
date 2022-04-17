@@ -3,7 +3,7 @@ import './SingleService.css';
 
 const SingleService = ({ picture, cost, title, description }) => {
     return (
-        <div className='col-12 col-lg-3 border bg-light me-5 rounded'>
+        <div className='col-12 col-lg-3 border mx-5 mb-3 bg-light rounded'>
             <div className='mt-3'>
                 <img className='img-fluid rounded border' src={picture} alt="" />
                 <h3>{title}</h3>
