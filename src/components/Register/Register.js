@@ -17,10 +17,6 @@ const Register = () => {
         setAgree(!agree)
     }
 
-    const navigateLogin = () => {
-        navigate('/login');
-    }
-
     const handleSubmit = (event) => {
         event.preventDefault();
         const name = event.target.name.value;
@@ -29,9 +25,12 @@ const Register = () => {
         createUserWithEmailAndPassword(email, password);
     }
 
-    if (!user) {
-        navigateLogin();
+    if (user) {
+        navigate('/');
+        console.log(user);
     }
+
+
     return (
         <div className='container-fluid mt-5'>
             <div className='w-75 mx-auto'>
@@ -45,7 +44,7 @@ const Register = () => {
                     <div className="mb-3">
                         <input type="password" name='password' className="form-control" placeholder='Choose a Password' required />
                     </div>
-                    <Link to={'/login'}><button className='btn btn-link fs-5 mb-2'>Already have an account? Login</button></Link>
+                    <button onClick={() => navigate('/login')} className='btn btn-link fs-5 mb-2'>Already have an account? Login</button>
                     <div className="mb-3 form-check">
                         <input type="checkbox" className="form-check-input" id="exampleCheck1" onClick={handleAgree} />
                         <label className="form-check-label">Accept terms and conditions</label>
