@@ -1,0 +1,12 @@
+.banner {
+    background-image: url('../../images/banner.png');
+    height: 700px;
+}
+
+.banner-text h3 {
+    font-size: 48px;
+}
+
+.banner-text h1 {
+    font-size: 54px;
+}
