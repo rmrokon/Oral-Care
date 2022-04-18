@@ -1,0 +1,23 @@
+[
+    {
+        "_id": "624acb66e85d78cae40beac7",
+        "picture": "https://randomuser.me/api/portraits/men/23.jpg",
+        "rating": 4,
+        "name": "Torres Dillard",
+        "review": "I had a bad cavity which was really painful. And I was suffering for a long time. Tried out a dentist before but the experience wasn't good. Then I came to know about Mr. Fibonacci. This awesome doctor. I would say we all should take care of our tooth. Mr. Fibonacci is my go to dentist now."
+    },
+    {
+        "_id": "624acb66434f3b7aef135c72",
+        "picture": "https://randomuser.me/api/portraits/men/27.jpg",
+        "rating": 3,
+        "name": "Graham Nielsen",
+        "review": "He is the best dentist I have ever consulted. His way to treating is awesome. He took his time and checked everything out and solved my issue just like magic. I definitely recommand him."
+    },
+    {
+        "_id": "624acb6608f7502837029cac",
+        "picture": "https://randomuser.me/api/portraits/men/73.jpg",
+        "rating": 5,
+        "name": "Rios Mcconnell",
+        "review": "I had a major surgery last month. And he did really well. I hardly felt any pain. The environment was super. And I must say he knows his craft. Before the surgery I was worried about it. Some of my friends has bad experiences with dental surgery. I was really nervous. But Mr. Fibonacci cheered me up and the surgery was successfull."
+    }
+]

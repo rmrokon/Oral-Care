@@ -2,6 +2,7 @@ import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Logo from '../../images/logo.png';
@@ -20,8 +21,8 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className='bg-dark' />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <CustomLink to={'/'}>Home</CustomLink>
-                        <CustomLink to='/services'>Services</CustomLink>
+                        <CustomLink to={'/home'}>Home</CustomLink>
+                        <HashLink style={{ "textDecoration": 'none' }} to="home#services">Services</HashLink>
                     </Nav>
                     <Nav>
                         <CustomLink to={'/blog'}>Blog</CustomLink>

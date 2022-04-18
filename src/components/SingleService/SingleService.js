@@ -8,8 +8,8 @@ const SingleService = ({ picture, cost, title, description }) => {
         navigate('/checkout');
     }
     return (
-        <div className='col-12 col-lg-3 border mx-5 mb-3 bg-light rounded'>
-            <div className='mt-3'>
+        <div className='grow col-12 col-lg-3 border mx-5 mb-3 bg-light rounded-1 shadow-lg'>
+            <div className='mt-2'>
                 <img className='img-fluid rounded border' src={picture} alt="" />
                 <h3>{title}</h3>
                 <p className='fs-3'>${cost}</p>

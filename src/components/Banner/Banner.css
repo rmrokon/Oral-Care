@@ -8,5 +8,10 @@
 }
 
 .banner-text h1 {
-    font-size: 54px;
+    font-family: 'Square Peg', cursive;
+    font-size: 108px;
+}
+
+.banner-top-image {
+    width: 40%;
 }

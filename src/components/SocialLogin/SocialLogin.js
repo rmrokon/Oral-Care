@@ -25,7 +25,7 @@ const SocialLogin = () => {
     }
 
     return (
-        <div className='container bg-light'>
+        <div className='container bg-light shadow-lg'>
             <div className='d-flex justify-content-center align-items-center mt-5'>
                 <div className='line-div' />
                 <span className='or mx-3'>Or</span>
@@ -34,13 +34,13 @@ const SocialLogin = () => {
             <p className='text-danger text-center fs-5'>{googleError && googleError.message} {facebookError && facebookError.message}</p>
             <div className='container'>
                 <div className='row justify-content-center w-50 mx-auto align-items-center'>
-                    <div className='col-12 col-md-6 text-end my-3'>
+                    <div className='grow col-12 col-md-6 text-end my-3'>
                         <button onClick={handleGoogleSignIn} className='border-0 btn btn-info me-2 w-100'>
                             <img style={{ width: '50px', height: '50px' }} src={Google} alt="" />
                             <span>Sign in with google</span>
                         </button>
                     </div>
-                    <div className='col-12 col-md-6 text-start'>
+                    <div className='grow col-12 col-md-6 text-start'>
                         <button onClick={handleFacebookSignIn} className='border-0 btn btn-info w-100'>
                             <img style={{ width: '50px', height: '50px' }} src={Facebook} alt="" />
                             <span>Sign in with Facebook</span>

@@ -3,7 +3,7 @@ import React from 'react';
 const CheckOut = () => {
     return (
         <div>
-            <h3>This is check out page</h3>
+            <h3 className='titles text-center mt-5'>I got your email address, I'll send you my schdule!</h3>
         </div>
     );
 };

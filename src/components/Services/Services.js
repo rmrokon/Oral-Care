@@ -6,7 +6,7 @@ const Services = () => {
     const services = useServices();
     return (
         <div id='services' className='mb-5'>
-            <h3 className='text-center my-5 fs-1'>Services</h3>
+            <h3 className='titles text-center my-5 fs-1'>Services</h3>
             <div className='container'>
                 <div className='row justify-content-center'>
                     {

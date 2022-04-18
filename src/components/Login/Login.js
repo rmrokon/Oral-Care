@@ -44,9 +44,9 @@ const Login = () => {
     }
 
     return (
-        <div className='container-fluid mt-5'>
+        <div className='w-75  mx-auto p-5 border rounded-3 shadow-lg mt-5'>
             <div className='w-75 mx-auto'>
-                <h3 className='text-center mb-5'>Login</h3>
+                <h3 className='titles text-center mb-3'>Login</h3>
                 <form className='w-50 mx-auto' onSubmit={handleLogin}>
                     <div className="mb-3">
                         <input onBlur={handleEmail} type="email" name='email' className="form-control" id="exampleInputEmail1" placeholder='Enter email' required />
@@ -54,7 +54,7 @@ const Login = () => {
                     <div className="mb-3">
                         <input type="password" name='password' className="form-control" id="exampleInputPassword1" placeholder='Enter Password' required />
                     </div>
-                    <button onClick={email && handleSendPassResetMail} className='btn btn-link fs-5 mb-2'>Forgot Password?</button><br />
+                    <button onClick={handleSendPassResetMail} className='btn btn-link fs-5 mb-2'>Forgot Password?</button><br />
                     <p className='text-danger'>{error && error.message} {passResetError && passResetError.message}</p>
                     <button type="submit" className="btn btn-primary">Login</button>
                     <ToastContainer></ToastContainer>

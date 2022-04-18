@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import About from "./components/About/About";
 import Blog from "./components/Blog/Blog";
 import CheckOut from "./components/CheckOut/CheckOut";
@@ -15,6 +15,7 @@ function App() {
     <div>
       <Header></Header>
       <Routes>
+        <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/about" element={<About></About>}></Route>

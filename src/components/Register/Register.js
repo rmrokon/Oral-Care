@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -37,8 +37,9 @@ const Register = () => {
 
 
     return (
-        <div className='container-fluid mt-5'>
+        <div className='container my-5 p-5 border rounded-3 shadow-lg'>
             <div className='w-75 mx-auto'>
+                <h3 className='titles text-center mb-3'>Register</h3>
                 <form className='w-50 mx-auto' onSubmit={handleSubmit}>
                     <div className="mb-3">
                         <input type="text" name='name' className="form-control" placeholder='Your Name' required />
