@@ -1,6 +1,9 @@
 .banner {
     background-image: url('../../images/banner.png');
+    background-size: cover;
+    background-position: center;
     height: 700px;
+    background-repeat: no-repeat;
 }
 
 .banner-text h3 {
@@ -9,7 +12,7 @@
 
 .banner-text h1 {
     font-family: 'Square Peg', cursive;
-    font-size: 108px;
+    font-size: 30px;
 }
 
 .banner-top-image {
