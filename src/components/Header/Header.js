@@ -29,7 +29,6 @@ const Header = () => {
                         <CustomLink to={'/about'}>About</CustomLink>
                         {user ? <Link onClick={logOut} to={'/'}>Logout</Link> : <CustomLink to={'/login'}>Login</CustomLink>}
                         {!user && <CustomLink to={'/register'}>Register</CustomLink>}
-                        {user && <Link to={'/'}>Logged in as {user.displayName}</Link>}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

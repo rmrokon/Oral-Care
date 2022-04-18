@@ -8,6 +8,7 @@ This is an independent dentist's website. People can:
 
 * Login and register 
 * Get an overview of the services provided by the dentist.
+* See previous customer reviews.
 
 In the project I have used:
 

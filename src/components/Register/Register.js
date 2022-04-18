@@ -8,11 +8,9 @@ const Register = () => {
     const [agree, setAgree] = useState(false);
     const [
         createUserWithEmailAndPassword,
-        user,
-        loading,
-        error,
+        user
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-    const [updateProfile, updating, updateProfileError] = useUpdateProfile(auth);
+    const [updateProfile] = useUpdateProfile(auth);
     const navigate = useNavigate();
 
     const handleAgree = () => {
