@@ -54,7 +54,7 @@ const Login = () => {
                     <div className="mb-3">
                         <input type="password" name='password' className="form-control" id="exampleInputPassword1" placeholder='Enter Password' required />
                     </div>
-                    <button onClick={handleSendPassResetMail} className='btn btn-link fs-5 mb-2'>Forgot Password?</button><br />
+                    <button onClick={handleSendPassResetMail} className='btn btn-link fs-5 mb-2 p-0'>Forgot Password?</button><br />
                     <p className='text-danger'>{error && error.message} {passResetError && passResetError.message}</p>
                     <button type="submit" className="btn btn-primary">Login</button>
                     <p className='mt-3'>New to Oral Care? <Link className='text-primary fs-5' to={'/register'}>Register</Link></p>

@@ -3,7 +3,7 @@ import Profile from '../../images/profile.png';
 
 const About = () => {
     return (
-        <div className='grow mt-5 w-50 mx-auto border rounded-1 bg-light shadow-lg'>
+        <div className='grow mt-5 mb-5 w-75 mx-auto border rounded-1 bg-light shadow-lg'>
             <div className='text-center mt-3'>
                 <img className='w-25 border rounded-2' src={Profile} alt="" />
                 <h3 className='my-3'>Md. Roknuzzaman</h3>

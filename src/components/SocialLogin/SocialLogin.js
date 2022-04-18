@@ -6,8 +6,8 @@ import auth from '../../firebase.init';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const SocialLogin = () => {
-    const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
-    const [signInWithFacebook, facebookUser, facebookLoading, facebookError] = useSignInWithFacebook(auth);
+    const [signInWithGoogle, googleUser, googleError] = useSignInWithGoogle(auth);
+    const [signInWithFacebook, facebookUser, facebookError] = useSignInWithFacebook(auth);
     const location = useLocation();
     const navigate = useNavigate();
     const from = location.state?.from.pathname || '/';
@@ -33,14 +33,14 @@ const SocialLogin = () => {
             </div>
             <p className='text-danger text-center fs-5'>{googleError && googleError.message} {facebookError && facebookError.message}</p>
             <div className='container'>
-                <div className='row justify-content-center w-50 mx-auto align-items-center'>
-                    <div className='grow col-12 col-md-6 text-end my-3'>
+                <div className='row justify-content-center mx-auto align-items-center'>
+                    <div className='col-12 col-lg-6 text-end my-3'>
                         <button onClick={handleGoogleSignIn} className='border-0 btn btn-info me-2 w-100'>
                             <img style={{ width: '50px', height: '50px' }} src={Google} alt="" />
                             <span>Sign in with google</span>
                         </button>
                     </div>
-                    <div className='grow col-12 col-md-6 text-start'>
+                    <div className='col-12 col-lg-6 text-start'>
                         <button onClick={handleFacebookSignIn} className='border-0 btn btn-info w-100'>
                             <img style={{ width: '50px', height: '50px' }} src={Facebook} alt="" />
                             <span>Sign in with Facebook</span>
