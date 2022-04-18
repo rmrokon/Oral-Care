@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
@@ -55,6 +56,9 @@ const Register = () => {
                     </div>
                     <button type="submit" className="btn btn-primary" disabled={!agree}>Register</button>
                 </form>
+            </div>
+            <div className=''>
+                <SocialLogin></SocialLogin>
             </div>
         </div>
     );

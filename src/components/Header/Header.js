@@ -14,18 +14,18 @@ const Header = () => {
         signOut(auth);
     }
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="dark">
+        <Navbar sticky='top' collapseOnSelect expand="lg" bg="light" variant="dark">
             <Container>
-                <img src={Logo} alt="" />
-                {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Brand href="#home"><img width={'75'} src={Logo} alt="" /></Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" className='bg-dark' />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <CustomLink to={'/'}>Home</CustomLink>
                         <CustomLink to='/services'>Services</CustomLink>
                     </Nav>
                     <Nav>
-                        {user && <CustomLink to={'/appoinment'}>View Appoinment</CustomLink>}
+                        <CustomLink to={'/blog'}>Blog</CustomLink>
+                        <CustomLink to={'/about'}>About</CustomLink>
                         {user ? <Link onClick={logOut} to={'/'}>Logout</Link> : <CustomLink to={'/login'}>Login</CustomLink>}
                         {!user && <CustomLink to={'/register'}>Register</CustomLink>}
                         {user && <Link to={'/'}>Logged in as {user.displayName}</Link>}

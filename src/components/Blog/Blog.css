@@ -1,0 +1,11 @@
+.qna-icon {
+    width: 3%;
+}
+
+.single-qna-div {
+    background-color: rgba(127, 255, 212, 0.371);
+    border: 1px solid rgba(255, 68, 0, 0.335);
+    border-radius: 8px;
+    padding: 1%;
+    margin: 1% 0;
+}
