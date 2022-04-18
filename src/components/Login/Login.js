@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { ToastContainer, toast } from 'react-toastify';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css';
 import 'react-toastify/dist/ReactToastify.css';
@@ -57,6 +57,7 @@ const Login = () => {
                     <button onClick={handleSendPassResetMail} className='btn btn-link fs-5 mb-2'>Forgot Password?</button><br />
                     <p className='text-danger'>{error && error.message} {passResetError && passResetError.message}</p>
                     <button type="submit" className="btn btn-primary">Login</button>
+                    <p className='mt-3'>New to Oral Care? <Link className='text-primary fs-5' to={'/register'}>Register</Link></p>
                     <ToastContainer></ToastContainer>
                 </form>
             </div>
